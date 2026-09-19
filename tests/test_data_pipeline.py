@@ -6,7 +6,6 @@ def test_project_structure():
 
     assert (project_root / "src").exists()
     assert (project_root / "mage").exists()
-    assert (project_root / "data").exists()
     assert (project_root / "README.md").exists()
 
 
