@@ -24,3 +24,5 @@ __pycache__/
 # OS files
 .DS_Store
 Thumbs.db
+# Mage generated files
+mage/.file_versions/
