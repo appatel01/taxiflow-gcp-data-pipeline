@@ -16,6 +16,23 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Debug repository
+        run: |
+          echo "Current directory:"
+          pwd
+
+          echo "Repository files:"
+          ls -la
+
+          echo "Source directory:"
+          ls -la src || true
+
+          echo "Git commit:"
+          git rev-parse HEAD
+
+          echo "Tracked source files:"
+          git ls-tree -r HEAD --name-only | grep "^src/" || true
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
