@@ -324,9 +324,17 @@ with col4:
 
 with col5:
 
+    revenue_display = (
+        f"{total_revenue / 1_000_000_000:.2f}B"
+        if total_revenue >= 1_000_000_000
+        else f"{total_revenue / 1_000_000:.2f}M"
+        if total_revenue >= 1_000_000
+        else f"{total_revenue:,.2f}"
+    )
+
     st.metric(
         "💵 Total Revenue",
-        f"{total_revenue:,.2f}"
+        revenue_display
     )
 
 
