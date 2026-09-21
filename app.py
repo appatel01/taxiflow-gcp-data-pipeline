@@ -239,13 +239,8 @@ if selected_hour != "All Hours":
 st.markdown(
     """
     <div>
-        <div class="hero-title">
-            🚕 TaxiFlow Analytics
-        </div>
-
-        <div class="hero-subtitle">
-            Interactive Taxi Trip Analytics Dashboard
-        </div>
+        <div class="hero-title">🚕 TaxiFlow Analytics</div>
+        <div class="hero-subtitle">Interactive Taxi Trip Analytics Dashboard</div>
     </div>
     """,
     unsafe_allow_html=True,
